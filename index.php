@@ -1,5 +1,5 @@
   <?php
   header ('Location: view/index.php');
-  // hello
+  // ห้ามใช้ hello
   exit;
   ?>
