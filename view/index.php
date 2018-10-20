@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!doctype html>
 <html lang="en">
   <head>
@@ -435,10 +434,3 @@ div.overlay-middle {
 
   </body>
 </html>
-=======
-  <?php
-  header ('Location: view/index.php');
-  // ห้ามใช้ hello
-  exit;
-  ?>
->>>>>>> 1ea9ed149a0f5f1aa81490198ae3b3dfde7c457a

@@ -159,3 +159,7 @@ Google+: <https://plus.google.com/+CreativetimPage>
 
 Instagram: <https://www.instagram.com/CreativeTimOfficial>
 
+<<<<<<< HEAD
+=======
+init SMEP
+>>>>>>> 1ea9ed149a0f5f1aa81490198ae3b3dfde7c457a
