@@ -235,12 +235,12 @@ div.overlay {
     top: 0;
     left: 0;
     background: #000;
-    opacity: 0.3;
+    opacity: 0.6;
     filter: alpha(opacity = 50); /* required for opacity to work in IE */
 }
 
 div.overlay-middle {
-    opacity: 0.7;
+    opacity: 0.8;
     filter: alpha(opacity = 50); /* required for opacity to work in IE */
 }
 
@@ -249,8 +249,8 @@ div.overlay-middle {
   <body>
 
     <div class="videoContainer overlay">
-        <iframe class="videoContainer__video" width="100%" height="100%" src="https://www.youtube.com/embed/1D0YnjlJ-bQ?autoplay=1&mute=0&enablejsapi=1&controls=0&fs=0&loop=1&rel=0&showinfo=0&disablekb=1s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </div>
+        <iframe class="videoContainer__video" width="100%" height="100%" src="https://www.youtube.com/embed/vwLjMTUmlp8?autoplay=1&mute=1&enablejsapi=1&controls=0&fs=0&loop=1&rel=0&showinfo=0&disablekb=1s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
 
 
 
@@ -289,6 +289,8 @@ div.overlay-middle {
                         </div>
                       </div>
                   </div>
+
+
                   <div class="row col-md-8">
                       <div class="col-md-1"></div>
                       <div class="col-md-10" align="left">
@@ -298,12 +300,25 @@ div.overlay-middle {
                               <h5 class="card-title text-center">Register</h5>
                               <form class="form-signin">
                                 <div class="row">
-                                  <div class="col">
+
+                                  <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      Prefix
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item" href="#">Mr.</a>
+                                      <a class="dropdown-item" href="#">Ms.</a>
+                                      <a class="dropdown-item" href="#">Mrs.</a>
+                                    </div>
+                                  </div>
+
+                                    <!--  <div class="col">
                                     <div class="form-label-group">
                                       <input type="text" id="reg-prefix" class="form-control" placeholder="Email address">
                                       <label for="reg-prefix">Prefix</label>
                                     </div>
-                                  </div>
+                                  </div>  -->
+
                                   <div class="col">
                                     <div class="form-label-group">
                                       <input type="text" id="reg-firstname" class="form-control" placeholder="Email address">
@@ -318,10 +333,69 @@ div.overlay-middle {
                                   </div>
                                 </div>
 
+
+                                  <div class="row">
+
+                                    <div class="dropdown">
+                                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Gender
+                                      </button>
+                                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">Male</a>
+                                        <a class="dropdown-item" href="#">Female</a>
+                                        <a class="dropdown-item" href="#">Other</a>
+                                      </div>
+                                    </div>
+
+                                  <div class="col">
+                                    <div class="form-label-group">
+                                  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+                                  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+                                  <script src="https://cdn.jsdelivr.net/npm/gijgo@1.9.10/js/gijgo.min.js" type="text/javascript"></script>
+                                  <link href="https://cdn.jsdelivr.net/npm/gijgo@1.9.10/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+
+                                  <input id="datepicker" type="text" class="form-control" placeholder="bdate" >
+                                  <!--<label for="reg-bdate">Birth Day</label>-->
+                                  <script>
+                                      $('#datepicker').datepicker({
+                                          uiLibrary: 'bootstrap4'
+                                      });
+                                  </script>
+                                  </div>
+                                </div>
+
+                                  <div class="col">
+                                    <div class="form-label-group">
+                                  <input type="text" id="reg-age" class="form-control" placeholder="Age">
+                                  <label for="reg-age">Age</label>
+                                  </div>
+                                  </div>
+                                </div>
+
+                                  <div class="row">
+                                    <div class="col">
+                                  <div class="form-label-group">
+                                    <input type="email" id="reg-address" class="form-control" placeholder="address">
+                                    <label for="reg-address">Address</label>
+                                  </div>
+                                </div>
+                                  <div class="col">
+                                    <div class="form-label-group">
+                                      <input type="email" id="reg-phone" class="form-control" placeholder="phone">
+                                      <label for="reg-phone">Phone</label>
+                                    </div>
+                                  </div>
+                                </div>
+
+
+
+
+
                                 <div class="form-label-group">
                                   <input type="email" id="reg-email" class="form-control" placeholder="Email address">
                                   <label for="reg-email">Email address</label>
                                 </div>
+
                                 <div class="form-label-group">
                                   <input type="text" id="reg-username" class="form-control" placeholder="Email address">
                                   <label for="reg-username">Username</label>
@@ -356,5 +430,7 @@ div.overlay-middle {
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
   </body>
 </html>
