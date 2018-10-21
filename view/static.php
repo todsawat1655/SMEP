@@ -11,7 +11,10 @@
 
 </head>
 
-<body class="dark-edition">
+
+
+<body 
+class="dark-edition">
   <div class="wrapper ">
 <?php require 'sidebar.php'; ?>
     <div class="main-panel">
